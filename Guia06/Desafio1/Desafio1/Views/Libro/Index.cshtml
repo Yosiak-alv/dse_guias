@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Biblioteca.Entities.DTO.LibroDto>
+
+@{
+    ViewData["Title"] = "Libros";
+}
+
+<h1>Libros</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Codigo</th>
+            <th>@Html.DisplayNameFor(model => model.Titulo)</th>
+            <th>Autor</th>
+            <th>Categoría</th>
+            <th>@Html.DisplayNameFor(model => model.FechaPublicacion)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Codigo)</td>
+                <td>@Html.DisplayFor(modelItem => item.Titulo)</td>
+                <td>@Html.DisplayFor(modelItem => item.NombreAutor)</td>
+                <td>@Html.DisplayFor(modelItem => item.NombreCategoria)</td>
+                <td>@Html.DisplayFor(modelItem => item.FechaPublicacion)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Codigo">Edit</a> | |
+                    <a asp-action="Delete" asp-route-id="@item.Codigo">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

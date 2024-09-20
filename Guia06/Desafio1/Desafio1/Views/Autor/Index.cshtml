@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Biblioteca.Entities.DTO.AutorDto>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Autores</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Codigo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreAutor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ApellidoAutor)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Codigo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreAutor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApellidoAutor)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Codigo">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Codigo">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Codigo">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

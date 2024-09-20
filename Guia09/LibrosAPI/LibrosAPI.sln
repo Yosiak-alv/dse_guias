@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrosAPI", "LibrosAPI\LibrosAPI.csproj", "{9DCEC00F-D99F-44E1-BF36-33C79B753818}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrosAPI.Tests", "LibrosAPI.Tests\LibrosAPI.Tests.csproj", "{6888A78F-21D8-44AF-9F77-96747D4E97CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DCEC00F-D99F-44E1-BF36-33C79B753818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DCEC00F-D99F-44E1-BF36-33C79B753818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DCEC00F-D99F-44E1-BF36-33C79B753818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DCEC00F-D99F-44E1-BF36-33C79B753818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6888A78F-21D8-44AF-9F77-96747D4E97CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6888A78F-21D8-44AF-9F77-96747D4E97CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6888A78F-21D8-44AF-9F77-96747D4E97CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6888A78F-21D8-44AF-9F77-96747D4E97CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1797476E-C925-40A0-86E2-32714CF85114}
+	EndGlobalSection
+EndGlobal
